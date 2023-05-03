@@ -3,7 +3,6 @@
 namespace Silly\Edition\PhpDi;
 
 use DI\Container;
-use DI\ContainerBuilder;
 
 /**
  * Silly CLI application using PHP-DI.
@@ -28,6 +27,6 @@ class Application extends \Silly\Application
      */
     protected function createContainer()
     {
-        return ContainerBuilder::buildDevContainer();
+        return new Container();
     }
 }
