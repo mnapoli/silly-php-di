@@ -27,7 +27,7 @@ class ApplicationTest extends TestCase
      */
     public function it_should_accept_the_container_in_the_constructor()
     {
-        $container = ContainerBuilder::buildDevContainer();
+        $container = new Container();
 
         $app = new Application('name', 'version', $container);
 
@@ -39,7 +39,7 @@ class ApplicationTest extends TestCase
      */
     public function it_should_inject_in_callables_parameters()
     {
-        $container = ContainerBuilder::buildDevContainer();
+        $container = new Container();
 
         $app = new Application('name', 'version', $container);
         $app->setAutoExit(false);
