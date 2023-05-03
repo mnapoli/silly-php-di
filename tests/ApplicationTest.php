@@ -8,8 +8,9 @@ use Silly\Edition\PhpDi\Application;
 use Silly\Edition\PhpDi\Test\Mock\SpyOutput;
 use Symfony\Component\Console\Input\StringInput;
 use Symfony\Component\Console\Output\OutputInterface as Out;
+use PHPUnit\Framework\TestCase;
 
-class ApplicationTest extends \PHPUnit_Framework_TestCase
+class ApplicationTest extends TestCase
 {
     /**
      * @test
